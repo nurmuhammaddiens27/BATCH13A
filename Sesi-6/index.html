@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nur Muhammaddien Sunarto</title>
+  </head>
+  <body>
+    <h3>Manipulasi DOM Pada Paragraf dengan Animasi Warna</h3>
+
+    <p id="paragraph1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat eligendi tempore ea quasi, voluptates eum quibusdam fugit ipsam veniam quam perferendis? Facere asperiores exercitationem fuga similique nihil fugiat eveniet!
+    </p>
+    <p id="paragraph2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat eligendi tempore ea quasi, voluptates eum quibusdam fugit ipsam veniam quam perferendis? Facere asperiores exercitationem fuga similique nihil fugiat eveniet!
+    </p>
+    <p id="paragraph3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat eligendi tempore ea quasi, voluptates eum quibusdam fugit ipsam veniam quam perferendis? Facere asperiores exercitationem fuga similique nihil fugiat eveniet!
+    </p>
+
+    <h3>Dibuat Oleh Nur Muhammaddien Sunarto</h3>
+
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeColor() {
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach((paragraph) => {
+                paragraph.style.color = getRandomColor();
+            });
+        }
+
+        setInterval(changeColor, 500); // Ubah warna setiap 0.5 detik (500 milidetik)
+    </script>
+</body>
+</html>

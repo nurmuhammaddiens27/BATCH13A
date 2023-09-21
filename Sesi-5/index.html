@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nur Muhammaddien Sunarto</title>
+</head>
+<body>
+
+    <h2>Masukkan Pesan dan Jumlah Perulangan:</h2>
+    <form id="loop-form">
+        <label for="kalimat">Pesan:</label>
+        <input type="text" id="kalimat" name="kalimat" required><br>
+        <br>
+        <label for="jumlah">Jumlah Perulangan:</label>
+        <input type="number" id="jumlah" name="jumlah" required><br>
+        <br>
+        <input type="submit" value="Cetak!">
+    </form>
+
+
+    <h2>Hasil Perlulangan (Order List)</h2>
+    <ol id="for-loop-list"></ol>
+
+    <script>
+        document.getElementById("loop-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var kalimat = document.getElementById("kalimat").value;
+            var jumlahPerulangan = parseInt(document.getElementById("jumlah").value);
+
+            // Mengisi Order List (For Loop)
+            var forLoopList = document.getElementById("for-loop-list");
+            forLoopList.innerHTML = ""; // Mengosongkan isi sebelumnya
+            for (var j = 1; j <= jumlahPerulangan; j++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = kalimat ;
+                forLoopList.appendChild(listItem);
+            }
+        });
+    </script>
+    <p>Dibuat Oleh Nur Muhammaddien Sunarto</p>
+</body>
+</html>
