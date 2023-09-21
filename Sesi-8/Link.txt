@@ -1,3 +1,10 @@
 github.
+Sesi 1 - 8    : https://github.com/nurmuhammaddiens27/BATCH13A
+Sesi 7	      : https://github.com/nurmuhammaddiens27/web_profile_sesi_07
+Final Project : https://github.com/nurmuhammaddiens27/finalproject
+
 
 netlify.
+
+Sesi 7	      : https://nurmuhammaddiensesi07.netlify.app/
+Final Project : https://fpportofolionurmuhammaddiens.netlify.app/
